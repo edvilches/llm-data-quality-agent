@@ -1,0 +1,6 @@
+id,age,country,email
+1,34,Chile,test@gmail.com
+2,-5,Chile,user@email.com
+3,27,Chle,abc@gmail.com
+4,29,,user@test.com
+5,34,Chile,test@gmail.com
