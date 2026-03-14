@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "LLM Data Quality Agentssss"
+message: "If you use this project, please cite it as below."
+authors:
+  - family-names: Vilches
+    given-names: Eduardo
+year: 2026
+license: MIT
+url: https://github.com/edvilches/llm-data-quality-agent.git
