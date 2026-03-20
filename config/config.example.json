@@ -1,0 +1,10 @@
+{
+  "ollama": {
+    "host": "localhost",
+    "port": 11434,
+    "model": "llama3"
+  },
+  "project": {
+    "environment": "local"
+  }
+}

@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def profile_dataset(path):
 
     df = pd.read_csv(path)
@@ -8,11 +9,14 @@ def profile_dataset(path):
 
     for col in df.columns:
 
+        series = df[col]
+
         profile[col] = {
-            "dtype": str(df[col].dtype),
-            "missing": int(df[col].isna().sum()),
-            "unique_values": int(df[col].nunique()),
-            "sample_values": df[col].dropna().unique()[:5].tolist()
+            "dtype": str(series.dtype),
+            "missing": int(series.isna().sum()),
+            "missing_pct": float(series.isna().mean()),
+            "unique_values": int(series.nunique()),
+            "sample_values": series.dropna().astype(str).unique()[:5].tolist()
         }
 
     return profile, df
